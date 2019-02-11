@@ -16,5 +16,6 @@ void loop() {
   int value = analogRead(A0);
   String dataToWrite = String(value) + String("\n");
   Serial.print(dataToWrite);
+  tone(3,1000,200);
   delay(timedelay);
 }
